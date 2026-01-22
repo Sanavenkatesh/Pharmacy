@@ -64,6 +64,7 @@ export default function AddMedicine({ onAdded }) {
                 <TextField
                     label="Price"
                     type="number"
+                    inputProps={{ step: "0.01" }}
                     {...register("price", {
                         required: "Price is required",
                         min: { value: 0, message: "Price must be positive" },
